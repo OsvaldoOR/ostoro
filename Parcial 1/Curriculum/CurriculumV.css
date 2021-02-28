@@ -1,0 +1,80 @@
+/*Esta es la hoja de estilo para el curriculum vitae*/
+
+body{
+    display: flex;
+
+}
+
+.ContenedorPrincipal{
+    border: 2px solid grey;
+    margin: auto;
+    width: 60%;
+    background-color: rgb(222, 224, 190);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Principal{
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#Foto{
+    width: 150px;
+    height: 150px;
+    border: 4px white solid;
+    border-radius: 15px;
+    margin-top: 13px;
+}
+
+.Cavecera{
+    display: flex;
+    text-align: center;
+}
+
+
+.Nombre{
+    padding-left: 10px;
+    border: 2px white solid;
+    border-radius: 15px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.Titulo{
+    padding-left: 15px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    color: black;
+    background-color: burlywood;
+}
+
+p,ul{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+table{
+    margin-top: 20px;
+    caption-side:bottom;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px rgb(109, 109, 109);
+    background-color: burlywood;
+}
+
+td,th{
+    border: 2px solid gray;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+caption{
+    padding-top: 20px;
+    font-style:normal;
+    color: black;
+}
