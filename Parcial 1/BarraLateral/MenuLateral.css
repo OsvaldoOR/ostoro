@@ -1,0 +1,108 @@
+/*Hoja de cascada para el menu lateral responsivo*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.MenuLateral{
+    overflow: hidden;
+    border: 5px double;
+    background-color: #2d3e50;
+}
+
+.MenuLateral p{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.MenuLateral a{
+    background-color: #2d3e50;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    
+}
+
+.MenuLateral a:hover{
+    background-color: white;
+    color: black;
+}
+
+.Contenido{
+    background-color: #4bb4a1;
+    float: left;
+    border: 5px double;
+}
+
+.Contenido h1{
+ text-align: center;
+ color: white;
+ margin-top: 20px;
+ 
+}
+
+.Contenido p{
+margin-left: 20px;
+margin-right: 20px;
+color: white;
+}
+
+/*Estilo a aplicar para monitor*/
+@media screen and (min-width: 800px){
+    .MenuLateral{
+        float: left;
+        height: 100vh;
+        width: 20%;
+    }
+    
+    .Contenido{
+        height: 100vh;
+        width: 80%;
+    }
+}
+
+/*Estilo a aplicar para tablet*/
+@media screen and (max-width: 800px) and (min-width: 481px){
+    .MenuLateral{
+        float: left;
+        width: 100%;
+        height: 10%;
+    }
+    
+    .MenuLateral a{
+        float: left;
+        text-align: center;
+        width: 20%;
+        
+    }
+    
+    .Contenido{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+/*Estilo a aplicar para movil*/
+@media screen and (max-width : 480px){
+    .MenuLateral{
+        float: left;
+        width: 100%;
+        height: 10%;
+    }
+    
+    .MenuLateral a{
+        float: left;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    .Contenido{
+        height: 90%;
+        width: 100%;
+    }
+}
