@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.container{
+    background-color: rgba(185, 233, 225, 0.836);
+    border-radius: 5px;
+}
+
+.form{
+    background-color: rgba(159, 230, 219, 0.575) ;
+}
