@@ -25,7 +25,6 @@
         $('#iniciarsesion').click(function(){
             var vcorreo = $('#correo').val();
             var vpass = $('#pass').val();
-            url = "https://www.google.com/"
 
             if(vcorreo == 'sergioosto999@gmail.com' && vpass == 'osto.1234.')
             {
