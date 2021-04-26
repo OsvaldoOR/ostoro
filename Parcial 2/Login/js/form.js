@@ -26,7 +26,7 @@
             var vcorreo = $('#correo').val();
             var vpass = $('#pass').val();
 
-            if(vcorreo == 'sergioosto999@gmail.com' && vpass == 'osto.1234.')
+            if(vcorreo == 'sergioosto999@gmail.com' && vpass == '1234')
             {
                 
                 alert( "inicio de sesion correcto");
