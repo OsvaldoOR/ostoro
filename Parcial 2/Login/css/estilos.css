@@ -25,7 +25,7 @@ body {
     background: #56808b;
     text-align: center;
     padding: 30px 0 40px;
-    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .form-header img {
@@ -113,7 +113,7 @@ input[type="password"] {
     top: 0;
     left: 0;
     font-size: 14px;
-    color: #FF3D00;
+    color: #008ab4;
     padding-left: 10px;
     cursor: text;
     transition: all .3s ease;
