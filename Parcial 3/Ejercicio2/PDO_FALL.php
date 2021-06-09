@@ -1,16 +1,16 @@
 
 <?php
 
-$conexion=new PDO("mysql:host=localhost;dbname=ostoro","root","");
+$conexion=new PDO("mysql:host=localhost;dbname=ostoro","root",""); //conexion
 
-    $busqueda=$conexion->prepare("Select * from personas");
+    $busqueda=$conexion->prepare("Select * from personas"); //consulta
     $busqueda->execute();
     $resultado = $busqueda->fetchAll();
 
 ?>
 
 <table   class="table table-bordered">
-   <tr>
+   <tr> <!--Creacion de la tabla -->
       <th class="bg-primary" scope="col">Id</th>
       <th class="bg-primary" scope="col">Nombre</th>
       <th class="bg-primary" scope="col">ApPaterno</th>
@@ -18,7 +18,7 @@ $conexion=new PDO("mysql:host=localhost;dbname=ostoro","root","");
       <th class="bg-primary" scope="col">edad</th>
       <th class="bg-primary" scope="col">telefono</th>
    </tr>
-    <?php
+    <?php //echo para impresion y muestreo
       foreach($resultado as $res)
       {
         echo "<tr>";
