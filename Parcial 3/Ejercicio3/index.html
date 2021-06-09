@@ -16,7 +16,8 @@
     <div class="container">  
       <br />
       <div class="table-responsive">  
-        <h3 align="center">Usando jsGrid</h3><br />
+        <h3 align="center">Ejercicio Usando jsGrid</h3>
+        <h3 align="center">Base de datos: ostoro</h3><br />
         <div id="grid_table"></div>
       </div>  
     </div>
@@ -29,8 +30,8 @@
     height: "800px",
 
     filtering: true,
-    //inserting:true,     
-    editing: true,
+    inserting:false,     
+    editing: false,
     sorting: true,
     paging: true,
     autoload: true,
@@ -41,69 +42,44 @@
     controller: {
       loadData: function(filter){
        return $.ajax({
-        type: "GET",
-        url: "jsgrid.php",
-        data: filter
+        type: "GET",url: "jsgrid.php",data: filter
        });
       },
       insertItem: function(item){
        return $.ajax({
-        type: "POST",
-        url: "jsgrid.php",
-        data:item
+        type: "POST",url: "jsgrid.php",data:item
        });
       },
       updateItem: function(item){
        return $.ajax({
-        type: "PUT",
-        url: "jsgrid.php",
-        data: item
+        type: "PUT",url: "jsgrid.php",data: item
        });
       },
       deleteItem: function(item){
        return $.ajax({
-        type: "DELETE",
-        url: "jsgrid.php",
-        data: item
+        type: "DELETE",url: "jsgrid.php",data: item
        });
       },
     },
 
     fields: [
       {
-        name: "id",
-        type: "hidden",
-        css: 'hide'
+        name: "id",type: "hidden",css: 'hide'
       },
       {
-        name: "Nombre", 
-        type: "text", 
-        width: 150, 
-        validate: "required"
+        name: "Nombre", type: "text", width: 150, validate: "required"
       },
       {
-        name: "apPaterno", 
-        type: "text", 
-        width: 150, 
-        validate: "required"
+        name: "apPaterno", type: "text", width: 150, validate: "required"
       },
       {
-        name: "apMaterno", 
-        type: "text", 
-        width: 150, 
-        validate: "required"
+        name: "apMaterno", type: "text", width: 150, validate: "required"
       },
       {
-        name: "edad", 
-        type: "text", 
-        width: 150, 
-        validate: "required"
+        name: "edad", type: "text", width: 150, validate: "required"
       },
       {
-        name: "telefono", 
-        type: "text", 
-        width: 150, 
-        validate: "required"
+        name: "telefono", type: "text", width: 150, validate: "required"
       },
       //{
         //type: "control"
